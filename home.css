@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Serif+JP:wght@500&display=swap');
+body{
+    background-image: url("background.png");
+    background-size: cover;
+    overflow: hidden; /* Hide scrollbars */
+    position: relative;
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+}
+
+.topEmpty{
+    height: 50%;
+}
+
+.main{
+    height: 50%;
+    text-align: center;
+}
+
+.manga{
+    transition: 0.2s ease-in-out;
+    vertical-align: bottom;
+    text-align: right;
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    height: 50%;
+    background-image: url("mangaTest.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    pointer-events: auto;
+}
+
+.anime{
+    transition: 0.2s ease-in-out;
+    vertical-align: middle;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    height: 50%;
+    background-image: url("animeTest.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    pointer-events: auto;
+}
+
+.manga:hover, .anime:hover{
+    transform: translateY(-10%);
+}
+
+.manga.parent:hover{
+    background-image: url("mangaTest.jpg");
+}
+
+.manga img{
+    height: 80%;
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.anime img{
+    margin-top: 100px;
+    height: 60%;
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+    
+}
+
+.anime .text{
+    
+    position: absolute;
+    color: #D7E9D0;
+    font-size: 105;
+    text-shadow: 0px 3px 16px black;
+    left: 0;
+    bottom: -30;
+    font-family: 'Poppins', sans-serif;
+}
+
+.anime .japText{
+    position: absolute;
+    bottom: -40;
+    text-align: right;
+    color: #73CFA1;
+    font-size: 100;
+    text-shadow: 0px 3px 16px #02512A;
+    left: 0;
+    bottom: -120;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 600;
+}
+
+.manga .text{
+    position: absolute;
+    color: #D7E9D0;
+    font-size: 105;
+    text-shadow: 0px 3px 16px black;
+    right: 0;
+    bottom: -30;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.manga .japText{
+    position: absolute;
+    bottom: -40;
+    text-align: left;
+    color: #73CFA1;
+    font-size: 100;
+    text-shadow: 0px 3px 16px #02512A;
+    right: 0;
+    bottom: -120;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 600;
+}
+
+.midEmpty{
+    display: inline-block;
+    width: 100px;
+}
