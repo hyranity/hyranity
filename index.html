@@ -1,0 +1,49 @@
+<html>
+
+<body>
+    <h1 id='testTitle'></h1>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    var database = firebase.database();
+
+    var starCountRef = firebase.database().ref('test');
+
+    var text = "";
+
+    starCountRef.on('value', function (snapshot) {
+        text = snapshot.val();
+    });
+
+    $(document).ready(function () {
+        $('#testTitle').text(text);
+    });
+</script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAhymmMtl5i6kW35mW7oR7d1yhrDGQCAvc",
+        authDomain: "hyranity.firebaseapp.com",
+        databaseURL: "https://hyranity.firebaseio.com",
+        projectId: "hyranity",
+        storageBucket: "hyranity.appspot.com",
+        messagingSenderId: "808191346719",
+        appId: "1:808191346719:web:5af3ddd6f3690654322d2a",
+        measurementId: "G-144XM7FCGJ"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+</script>
+
+</html>
