@@ -55,7 +55,7 @@ body{
     position: absolute;
     height: 100%;
     width: 100%;
-    
+    margin-top: 50px;
 }
 
 .ongoingSection{
@@ -63,6 +63,7 @@ body{
     height: 100%;
     width: 100%;
     display: none;
+    margin-top: 50px;
 }
 
 .item{
