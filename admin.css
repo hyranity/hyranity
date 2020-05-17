@@ -1,0 +1,132 @@
+body{
+    position: relative;
+}
+.japRadio{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 600;
+}
+
+input[type="text"]{
+    background-color: transparent;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    margin: 10px;
+    outline: none;
+    color: white;
+}
+
+input[type="text"]::placeholder{
+    color: white;
+    opacity: 0.5;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+input[type="radio"] + label{
+    transition: 0.2s ease-in-out;
+    color: #D7E9D0;
+    font-size: 30px;
+    margin-top: 20px;
+    opacity: 0.5;
+ }
+
+input[type="radio"]:checked + label {
+    opacity: 1;
+  }
+
+  input[type="radio"] + label:hover {
+    opacity: 1;
+  }
+
+.addButton{
+    background-color: white;
+    border-radius: 20px;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.getButton{
+    background-color: #D7E9D0;
+    border-radius: 20px;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.delButton{
+    margin-left: 10px;
+    background-color: orangered;
+    border-radius: 20px;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.messageBar{
+    display: none;
+    position: absolute;
+    background-color:  white ;
+    left: 50%;
+    top: 50%;
+    padding: 10px;
+    transform: translate(-50%,-50%);
+  width: 500px;
+  border-radius: 20px;
+  height: fit-content;
+}
+
+.messageBar div{
+    position: relative;
+    display: inline-block;
+}
+
+.messageBar .title{
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+.messageBar .message{
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.okBt{
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;  
+}
