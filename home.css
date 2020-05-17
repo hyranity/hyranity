@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Noto+Serif+JP:wght@500&display=swap');
 body{
-    background-image: url("background.png");
+    background-image: url("backgroundOnly.png");
     background-size: cover;
     overflow: hidden; /* Hide scrollbars */
     position: relative;
@@ -8,10 +8,19 @@ body{
     margin: 0;
     pointer-events: none;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .topEmpty{
-    height: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    position: relative;
+    height: 35%;
+    z-index: 1;
+    margin-top: -20px;
+    margin-bottom: 150px;
+    background-image: url("titleImg.png");
 }
 
 .main{
