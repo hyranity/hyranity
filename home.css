@@ -7,6 +7,7 @@ body{
     padding: 0;
     margin: 0;
     pointer-events: none;
+    background-repeat: no-repeat;
 }
 
 .topEmpty{
@@ -14,7 +15,7 @@ body{
 }
 
 .main{
-    height: 50%;
+    height: 500px;
     text-align: center;
 }
 
@@ -95,6 +96,7 @@ body{
     bottom: -120;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .manga .text{
@@ -119,6 +121,7 @@ body{
     bottom: -120;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .midEmpty{
