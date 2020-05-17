@@ -74,11 +74,11 @@ body{
     max-width: fit-content;
     overflow: hidden;
     margin: 10px;
-    padding: 40px;
+    padding: 0px;
     border-radius: 20px;
     text-align: left;
    max-height: fit-content;
-   min-width: 700px;
+   min-width: 0%;
 }
 
 .item img{
@@ -88,6 +88,7 @@ body{
 }
 
 .item .name{
+    transition: 0.2s ease-in-out;
     position: relative;
     display: inline-block;
     color: white;
@@ -97,7 +98,8 @@ body{
     font-weight: 600;
     top: 0;
     line-height: 1;
-    max-width: 320px;
+    width: 320px;
+    
 }
 
 .item .rating{
@@ -128,7 +130,7 @@ body{
     position: relative;
     display: inline-block;
     text-align: left;
-    max-width: 400px;
+    max-width: 100%;
    
     
 }
@@ -147,14 +149,14 @@ body{
     text-align: left;
     font-family: 'Poppins', sans-serif;
     text-shadow: 0px 3px 16px #3B463B;
-    width: 246px;
+    width: 251px;
 }
-
 .item:hover{
     opacity: 1;
     display: inline-block;
     transition: 0.2s ease-in-out;
     
+  
 }
 
 .item:hover .mainTop{
@@ -166,9 +168,15 @@ body{
 }
 
 .item:hover .sypnosis{
-    max-width: 420px;
+    max-width: 450px;
     opacity: 1;
     position: relative;
+    
+}
+
+.item:hover .name{
+    max-width: 100%;
+    
 }
 
 .item:hover .mainBottom{
@@ -181,6 +189,7 @@ body{
 
 
 .sypnosis{
+    
     transition: 0.2s ease-in-out;
     margin-left: 40px;
     vertical-align: top;
@@ -188,7 +197,6 @@ body{
     display: inline-block;
     max-width: 0;
     overflow: hidden;
-    
     
 }
 
@@ -235,7 +243,6 @@ body{
     overflow: hidden;
     
     
-    
 }
 
 .item .numbering{
@@ -250,6 +257,4 @@ body{
     margin-right: 30px;
     margin-top: 5%;
 }
-
-
 
