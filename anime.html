@@ -17,16 +17,28 @@
         <div style='position: relative; display: inline-block; width: 10px;'></div>
         <h1 class='ongoing'>ONGOING</h1>
     </div>
-    <form class="searchBar">
+    <div class="searchBar">
         <input type="text" id="query" placeholder="search...">
-        <input type="submit" value=">" hidden>
-    </form>
+        <div class="help">?</div>
+        <div class="helpText">help</div>
+    </div>
     <div class='completedSection'>
 
     </div>
     </div>
     <div class='ongoingSection'>
         
+    </div>
+    <div class="messageBar">
+        <div class="title">Search help</div>
+        <br>
+        <div class="message">Search by name</div>
+        <div class="message" style="font-size: 20px; margin-bottom: 20px;"><b>Type</b> <i>name</i></div>
+        <div class="message">Search by genres:</div>
+        <div class="message" style="font-size: 20px;"><i><b>Type</b> genre=[genre1,genre2,+requiredGenre,-ignoreGenre]</i></div>
+        <div class="message" style="font-size: 20px;"><b>Example:</b> genre=[romance,+comedy, -drama]</div>
+        <br>
+        <div class="okBt">OK</div>
     </div>
 </body>
 

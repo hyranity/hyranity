@@ -213,3 +213,11 @@ $("#query").on('input', function (e) {
     loadAllData(resultList, selectingCompleted);
 
 });
+
+$(".help").click(function(){
+    $(".messageBar").css("display", "block");
+});
+
+$(".okBt").click(function () {
+    $(".messageBar").css("display", "none");
+});

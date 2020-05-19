@@ -206,6 +206,14 @@ $("#query").on('input', function (e) {
 
 });
 
+$(".help").click(function(){
+    $(".messageBar").css("display", "block");
+});
+
+$(".okBt").click(function () {
+    $(".messageBar").css("display", "none");
+});
+
 // function narrowDownList(list, query){
 //     return new Promise(function (resolve, reject) {
 //         forEach(item =>{
