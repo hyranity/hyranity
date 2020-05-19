@@ -13,10 +13,12 @@ body{
     background-repeat: no-repeat;
     background-position-x: center;
     position: relative;
-    height: 35%;
+    height: 25%;
     z-index: 1;
-    margin-top: -50px;
     background-image: url("titleImg.png");
+    width: 40%;
+    display: inline-block;
+    margin-bottom: 50px;
 }
 
 .completed{
@@ -258,3 +260,42 @@ body{
     margin-top: 5%;
 }
 
+
+.searchBar{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.searchBar input[type="text"]{
+    transition: 0.2s ease-in-out;
+    background-color: transparent;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    outline: none;
+    color: white;
+    width: 300px;
+    text-align: center;
+}
+
+.searchBar input[type="text"]::placeholder{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: rgba(255,255,255,0.8);
+    
+    
+}
+
+.searchBar input[type="submit"]{
+    transition: 0.2s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    outline: none;
+    background-color: transparent;
+    border-width: 0;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
